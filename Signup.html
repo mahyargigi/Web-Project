@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Signup-css.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="JavaScipt/Signup-js.js"></script>
+
+</head>
+<body>
+    <div class="body-div">
+        <form method="post">
+            <div class="form-group">
+                <div class="username has-success input">
+                    <label class="control-label">Username</label>
+                    <input type="text" class="form-control" required="you have to fill it" id="user-input">
+
+                </div>
+                <div class="password input">
+                    <label class="control-label">Password</label>
+                    <input type="password" class="form-control" id="first-pass">
+                </div>
+                <div class="confirm-pass input">
+                    <label class="control-label">Confirm password</label>
+                    <input type="password" class="form-control" id="second-pass">
+                    <label >Wrong password!</label>
+                </div>
+                <div class="email input">
+                    <label class="control-label">Email</label>
+                    <input type="email" class="form-control" id="emailAddress">
+                </div>
+                <div class="birthday-date input">
+                    <label class="control-label">Birthday Date</label>
+                    <div id="default-birthday"></div>
+                </div>
+                <button type="submit" class="btn btn-success disabled">Send!</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
