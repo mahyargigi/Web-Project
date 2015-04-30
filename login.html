@@ -147,51 +147,54 @@
 </head>
 <body>
 <!--site starts-->
-<header class="header">
+<header class="page-header">
     <h2 class="text-center">Welcome to IMGIGI</h2>
 </header>
-<div class="col-md-4"></div>
-<div class="col-md-4">
-    <div class="well bs-component">
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>Login</legend>
-                <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+ <div class="row">
+     <!--had the class container-->
+    <div id="left" class="col-md-3"></div>
+    <div id="center" class="col-md-6">
+        <div class="well bs-component">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div class="form-group">
+                        <label for="inputUsername" class="col-lg-2 control-label">Username</label>
 
-                    <div class="col-lg-10">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Username">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-
-                    <div class="col-lg-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-
-                        <button type="submit" class="btn btn-primary ">Submit</button>
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="inputUsername" placeholder="Username">
                         </div>
-                        <!--<div class="col-lg-10 col-lg-offset-2">-->
-
-                        <!--</div>-->
                     </div>
-                </div>
-                <div class="form-group">
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
 
-                    <br>
-                    <a href="javascript:void(0)" class="btn btn-link">Forgot password</a>
-                    <a href="javascript:void(0)" class="btn btn-link">Signup</a>
-                </div>
-            </fieldset>
-        </form>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                            <button type="submit" class="btn btn-primary ">Submit</button>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <!--<div class="col-lg-10 col-lg-offset-2">-->
+
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <br>
+                        <a href="javascript:void(0)" class="btn btn-link">Forgot password</a>
+                        <a href="javascript:void(0)" class="btn btn-link">Signup</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
-</div>
-<div class="col-md-4"></div>
+    <div id="right" class="col-md-3"></div>
+ </div>
 <!--site ends!-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
