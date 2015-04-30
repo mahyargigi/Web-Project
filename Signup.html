@@ -68,121 +68,123 @@
 </head>
 <body>
 <!--Site starts-->
-    <header class="page-header">
-         <a href="javascript:void(0)" class="btn btn-link " id="sign-in">Sign in</a>
-        <!--TODO: header has problem-->
-        <h2 class="text-center">Welcome to IMGIGI</h2>
-    </header>
-    <div class="row">
-        <div id="left" class="col-md-3"></div>
-        <div id="center" class="col-md-6">
-            <div class="well bs-component">
-                <form class="form-horizontal">
-                    <fieldset>
-                        <legend>Signup</legend>
-                        <div class="form-group">
-                            <label for="inputUsername" class="col-lg-2 control-label">Username</label>
+<header class="page-header">
+    <a href="javascript:void(0)" class="btn btn-link " id="sign-in">Sign in</a>
+    <!--TODO: header has problem-->
+    <h2 class="text-center">Welcome to IMGIGI</h2>
+</header>
+<div class="row">
+    <div id="left" class="col-md-3"></div>
+    <div id="center" class="col-md-6">
+        <div class="well bs-component">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>Signup</legend>
+                    <div class="form-group">
+                        <label for="inputUsername" class="col-lg-2 control-label">Username</label>
 
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" id="inputUsername" placeholder="Username">
-                            </div>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="inputUsername" placeholder="Username">
                         </div>
-                        <div class="form-group">
-                            <label for="inputDisplayname" class="col-lg-2 control-label">Displayname</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDisplayname" class="col-lg-2 control-label">Displayname</label>
 
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" id="inputDisplayname" placeholder="Displayname">
-                            </div>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="inputDisplayname" placeholder="Displayname">
                         </div>
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
 
-                            <div class="col-lg-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                            </div>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                         </div>
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-lg-2 control-label">Confirm Password</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-lg-2 control-label">Confirm Password</label>
 
-                            <div class="col-lg-10">
-                                <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password">
-                            </div>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="ConfirmPassword"
+                                   placeholder="Confirm Password">
                         </div>
-                        <div class="form-group">
-                            <label for="inputEmail" class="col-lg-2 control-label">EmailAddress</label>
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="EmailAddress">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label  class="col-lg-2 control-label">Birth Date</label>
-                            <!--form ommited-->
-                            <div class="col-lg-10 row">
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Year</option>
-                                    <option>1994</option>
-                                    <option>1995</option>
-                                    <option>1996</option>
-                                    <option>1997</option>
-                                    <option>1998</option>
-                                    <option>1999</option>
-                                    <option>2000</option>
-                                    <option>2001</option>
-                                    <option>2002</option>
-                                    <option>2003</option>
-                                    <option>2004</option>
-                                    <option>2005</option>
-                                    <option>2006</option>
-                                    <option>2007</option>
-                                    <option>2008</option>
-                                    <option>2009</option>
-                                    <option>2010</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-                                </select>
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Month</option>
-                                    <option>January</option>
-                                    <option>February</option>
-                                    <option>March</option>
-                                    <option>April</option>
-                                    <option>May</option>
-                                    <option>June</option>
-                                    <option>July</option>
-                                    <option>August</option>
-                                </select>
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Day</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                </select>
-                                <button type="submit" class="btn btn-primary ">Submit</button>
-                                <!--TODO: disable and enable it with jquery checkings! -->
-                                <!--TODO: dropdownha kenare ham nabashan -->
-                            </div>
-                        </div>
-                        <!--<div class="form-group">-->
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-2 control-label">EmailAddress</label>
 
-                            <!--<br>-->
-                            <!--<a href="javascript:void(0)" class="btn btn-link">Forgot password</a>-->
-                            <!--<a href="javascript:void(0)" class="btn btn-link">Signup</a>-->
-                        <!--</div>-->
-                    </fieldset>
-                </form>
-            </div>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="EmailAddress">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Birth Date</label>
+                        <!--form ommited-->
+                        <div class="col-lg-10 row">
+                            <select class="form-control ">
+                                <!--id ommited=select-->
+                                <option>Year</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                            </select>
+                            <select class="form-control ">
+                                <!--id ommited=select-->
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                            </select>
+                            <select class="form-control ">
+                                <!--id ommited=select-->
+                                <option>Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary ">Submit</button>
+                            <!--TODO: disable and enable it with jquery checkings! -->
+                            <!--TODO: dropdownha kenare ham nabashan -->
+                        </div>
+                    </div>
+                    <!--<div class="form-group">-->
+
+                    <!--<br>-->
+                    <!--<a href="javascript:void(0)" class="btn btn-link">Forgot password</a>-->
+                    <!--<a href="javascript:void(0)" class="btn btn-link">Signup</a>-->
+                    <!--</div>-->
+                </fieldset>
+            </form>
         </div>
-        <div id="right" class="col-md-3"></div>
     </div>
+    <div id="right" class="col-md-3"></div>
+</div>
 <!--Site ends-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>

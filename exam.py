@@ -1,5 +1,6 @@
 def foo(bar):
-  return bar+1
+    return bar + 1
+
 
 print(foo)
 print(foo(2))
