@@ -2,23 +2,64 @@
  * Created by User on 4/29/15.
  */
 $(document).ready(function(){
-   $('.follow').click(function(){
-       $(this).removeClass('btn-info');
-       $(this).addClass('btn-success');
-       $(this).text("following");
-       $(this).removeClass('follow');
-       $(this).addClass('following');
-//       $(this).parent().parent().delay(2000).hide();
-//       window.setTimeout($(this).parent().parent().hide(),2000);
-       // ba takhir hide nemishe!
-//       )
-   }) ;
-//    $('.following').hover(function(){
-//        console.log("hover");
-//        $(this).removeClass('btn-success');
-//        $(this).addClass('btn-danger');
-//        $(this).text("Unfollow");
-//    });
+//   $('.follow').on('click',
+//       function(){
+//           console.log("clicked!")
+//
+//       $(this).hover(function(){
+////            console.log("hover");
+//            $(this).on('click',function(){
+//                $(this).removeClass('btn-danger');
+//                $(this).addClass('btn-info');
+//                $(this).text('follow');
+//                $(this).removeClass('following');
+//                $(this).addClass('follow');
+//                $(this).unbind('mouseenter mouseleave');
+//            });
+//        }, function() {
+//
+//       });
+////       console.log($(this).className)
+////       $(this).parent().parent().delay(2000).hide();
+////       window.setTimeout($(this).parent().parent().hide(),2000);
+////       ba takhir hide nemishe!
+//   }) ;
+    notClicked($('.follow'));
+    clicked($('.following'));
+
+    function notClicked($element){
+        $element.unbind();
+        $element.removeClass('btn-danger')
+                .addClass('btn-info')
+                .text('follow')
+                .removeClass('following')
+                .addClass('follow');
+        $element.click(function() {
+            clicked($(this));
+        });
+    }
+
+    function clicked($element) {
+        $element.unbind();
+        $element.removeClass('btn-info')
+                .addClass('btn-success')
+                .text("following")
+                .removeClass('follow')
+                .addClass('following');
+        $element.hover(function() {
+            $(this).removeClass('btn-success')
+                    .addClass('btn-danger')
+                    .text("Unfollow");
+        },
+        function() {
+            $(this).removeClass('btn-danger')
+                    .addClass('btn-success')
+                    .text("following");
+        });
+        $element.click(function() {
+            notClicked($(this));
+        })
+    }
 //    $('.btn-danger').hover(function(){
 //
 //    });
