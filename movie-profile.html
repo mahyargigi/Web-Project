@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Movie Profile</title>
+</head>
+<body>
+<!--site starts-->
+<div class="row">
+    <!--had the class container-->
+    <div id="left" class="col-lg-3"></div>
+    <div id="center" class="col-lg-6">
+
+        <!-- Modal -->
+        <div class="modal" id="rate-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                        </button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input class="form-control floating-label" id="focusedInput" type="text"
+                                   placeholder="Write something about this movie ...">
+                        </div>
+                        <div class="card">
+
+                            <div class="card-height-indicator"></div>
+
+                            <div class="card-content">
+
+                                <div class="row">
+                                    <div class="card-image col-lg-6">
+                                        <img src="Img/before-midnight.jpg" class="shadow-z-1" alt="Loading image...">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3>Before Sunrise</h3>
+
+                                        <div class="small"><span>105 min</span></div>
+                                        <!--<hr>-->
+                                    </div>
+                                    <div>
+                                        <div class=""></div>
+                                    </div>
+                                    <div>
+                                        <input id="short-movie-rate" type="number" class="rating" data-stars="1"
+                                               data-max="10" data-step="0.1" data-show-caption="true" data-size="xl"
+                                               data-show-clear="false" data-readonly="true"
+                                                >
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+
+
+                                <footer class="card-footer">
+                                    <button class="btn btn-flat">Share</button>
+                                    <button class="btn btn-flat btn-warning">Learn More</button>
+                                </footer>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-height-indicator"></div>
+
+
+            <div class="card-content">
+
+                <div class="card-image-headline">
+                    s
+                </div>
+                <div class="row">
+                    <div class="card-image col-lg-6">
+                        <img src="Img/before-midnight.jpg" class="shadow-z-1" alt="Loading image...">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Before Sunrise</h3>
+
+                        <div class="small"><span>105 min</span></div>
+                        <!--<hr>-->
+                    </div>
+                    <div>
+                        <div class=""></div>
+                    </div>
+                    <div>
+                        <input id="movie-rate" type="number" class="rating" data-stars="1"
+                               data-max="10" data-step="0.1" data-show-caption="true" data-size="xl"
+                               data-show-clear="false" data-readonly="true"
+                                >
+
+
+                        <input id="rate-it" type="number" class="rating" data-stars="10"
+                               data-max="10" data-step="1" data-show-caption="false" data-size="xs"
+                               data-show-clear="false"
+                               data-toggle="modal" data-target="#myModal">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+
+                <footer class="card-footer">
+                    <button class="btn btn-flat">Share</button>
+                    <button class="btn btn-flat btn-warning">Learn More</button>
+                </footer>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="right" class="col-md-3"></div>
+</div>
+<!--site ends!-->
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/star-rating.min.js" type="text/javascript"></script>
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+        $('#movie-rate').rating('update', 8.1);
+        $('#rate-it').on('rating.change', function (event, value, caption) {
+
+            console.log(value);
+            console.log(caption);
+            $("#rate-modal").modal("show");
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
