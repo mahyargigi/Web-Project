@@ -1,48 +1,208 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<title>Welcome To IMGIGI</title>-->
+<!--<meta charset="utf-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--&lt;!&ndash; Latest compiled and minified css &ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">&ndash;&gt;-->
+<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+<!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+<!--<link rel="stylesheet" href="css/material.css">-->
+<!--<link rel="stylesheet" href="css/material-fullpalette.css">-->
+<!--<link rel="stylesheet" href="css/ripples.css">-->
+<!--<link rel="stylesheet" href="css/roboto.css">-->
+
+<!--<link rel="stylesheet" href="css/login.css">-->
+
+<!--&lt;!&ndash;&lt;!&ndash; jQuery library &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>&ndash;&gt;-->
+<!--<script src="js/JavaScipt/jquery-1.11.2.js"></script>-->
+<!--<script src="js/JavaScipt/login.js"></script>-->
+<!--<script src="js/material.js"></script>-->
+<!--<script src="js/ripples.js"></script>-->
+<!--<script src="js/npm.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;<div class="body-div">&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="login-div">&ndash;&gt;-->
+<!--&lt;!&ndash;<form role="form" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-group email-address">&ndash;&gt;-->
+<!--&lt;!&ndash;<label >Username:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="text" class="form-control" id="user-input">&ndash;&gt;-->
+<!--&lt;!&ndash;<label>Password:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="password" class="form-control" id="pass-input">&ndash;&gt;-->
+<!--&lt;!&ndash;<label><input type="checkbox">Remember me</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="btn-group btn-group-lg">&ndash;&gt;-->
+<!--&lt;!&ndash;<button type="submit" class="btn btn-success">Login</button>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<a href="forgot-password.html" class="btn btn-success" >Login</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div>-->
+<!--<form class="form-horizontal">-->
+<!--<fieldset>-->
+<!--<legend>Legend</legend>-->
+<!--<div class="form-group">-->
+<!--<label for="inputEmail" class="col-lg-2 control-label">Email</label>-->
+<!--<div class="col-lg-10">-->
+<!--<input type="email" class="form-control" id="inputEmail" placeholder="Email">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="inputPassword" class="col-lg-2 control-label">Password</label>-->
+<!--<div class="col-lg-10">-->
+<!--<input type="password" class="form-control" id="inputPassword" placeholder="Password">-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox"> Checkbox-->
+<!--</label>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="togglebutton">-->
+<!--<label>-->
+<!--<input type="checkbox" checked=""> Toggle button-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="inputFile" class="col-lg-2 control-label">File</label>-->
+<!--<div class="col-lg-10">-->
+<!--<input type="text" readonly="" class="form-control floating-label" placeholder="Browse...">-->
+<!--<input type="file" id="inputFile" multiple="">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="textArea" class="col-lg-2 control-label">Textarea</label>-->
+<!--<div class="col-lg-10">-->
+<!--<textarea class="form-control" rows="3" id="textArea"></textarea>-->
+<!--<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="col-lg-2 control-label">Radios</label>-->
+<!--<div class="col-lg-10">-->
+<!--<div class="radio radio-primary">-->
+<!--<label>-->
+<!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">-->
+<!--Option one is this-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="radio radio-primary">-->
+<!--<label>-->
+<!--<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">-->
+<!--Option two can be something else-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="select" class="col-lg-2 control-label">Selects</label>-->
+<!--<div class="col-lg-10">-->
+<!--<select class="form-control" id="select">-->
+<!--<option>1</option>-->
+<!--<option>2</option>-->
+<!--<option>3</option>-->
+<!--<option>4</option>-->
+<!--<option>5</option>-->
+<!--</select>-->
+<!--<br>-->
+<!--<select multiple="" class="form-control">-->
+<!--<option>1</option>-->
+<!--<option>2</option>-->
+<!--<option>3</option>-->
+<!--<option>4</option>-->
+<!--<option>5</option>-->
+<!--</select>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<div class="col-lg-10 col-lg-offset-2">-->
+<!--<button class="btn btn-default">Cancel</button>-->
+<!--<button type="submit" class="btn btn-primary">Submit</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</fieldset>-->
+<!--</form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
 <html>
 <head>
-    <title>Welcome To IMGIGI</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified css -->
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/login-page-css.css">
-
-    <!--&lt;!&ndash; jQuery library &ndash;&gt;-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-
-    <!--&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;-->
-    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-    <script src="js/JavaScipt/jquery-1.11.2.js"></script>
-    <script src="js/JavaScipt/login-page-js.js"></script>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <title>Login</title>
 </head>
 <body>
-    <div class="body-div">
-        <div id="login-div">
-            <form role="form" method="post">
-                <div class="form-group email-address">
-                    <label >Username:</label>
-                    <input type="text" class="form-control" id="user-input">
-                    <label>Password:</label>
-                    <input type="password" class="form-control" id="pass-input">
-                    <label><input type="checkbox">Remember me</label>
-                    <div class="btn-group btn-group-lg btn-group-vertical">
-                        <button type="submit" class="btn btn-success">Login</button>
-                        <!--<a href="forgot-password.html" class="btn btn-success" >Login</a>-->
-                        <button type="button" class="btn btn-primary" id="create-account">Create Account</button>
-                        <!--<a href="#" class="btn btn-primary">Create Account</a>-->
-                        <button type="button" class="btn btn-danger" id="forgot-pass"> Forgot My Password :(</button>
-                        <!--<a href="forgot-password.html" class="btn btn-danger">Forgot My Password :(</a>-->
+<!--site starts-->
+<header class="header">
+    <h2 class="text-center">Welcome to IMGIGI</h2>
+</header>
+<div class="col-md-4"></div>
+<div class="col-md-4">
+    <div class="well bs-component">
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Login</legend>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Username">
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
 
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                        <button type="submit" class="btn btn-primary ">Submit</button>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <!--<div class="col-lg-10 col-lg-offset-2">-->
+
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <br>
+                    <a href="javascript:void(0)" class="btn btn-link">Forgot password</a>
+                    <a href="javascript:void(0)" class="btn btn-link">Signup</a>
+                </div>
+            </fieldset>
+        </form>
     </div>
+</div>
+<div class="col-md-4"></div>
+<!--site ends!-->
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+    });
+</script>
 </body>
 </html>
