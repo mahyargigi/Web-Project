@@ -18,7 +18,7 @@
 <!--&lt;!&ndash;&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;&ndash;&gt;-->
 <!--&lt;!&ndash;<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>&ndash;&gt;-->
 <!--<script src="js/jquery-1.11.2.js"></script>-->
-<!--<script src="js/Signup-js.js"></script>-->
+<!--<script src="js/Signup.js"></script>-->
 
 
 <!--</head>-->
@@ -60,9 +60,10 @@
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/roboto.min.css" rel="stylesheet">
-    <link href="css/material.min.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
-    <link href="css/signup.css">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
+    <!--<link href="css/signup.css" rel="stylesheet">-->
     <title>Signup</title>
 
 </head>
@@ -116,61 +117,64 @@
                         </div>
                         <div class="form-group">
                             <label  class="col-lg-2 control-label">Birth Date</label>
-                            <!--form ommited-->
-                            <div class="col-lg-10 row">
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Year</option>
-                                    <option>1994</option>
-                                    <option>1995</option>
-                                    <option>1996</option>
-                                    <option>1997</option>
-                                    <option>1998</option>
-                                    <option>1999</option>
-                                    <option>2000</option>
-                                    <option>2001</option>
-                                    <option>2002</option>
-                                    <option>2003</option>
-                                    <option>2004</option>
-                                    <option>2005</option>
-                                    <option>2006</option>
-                                    <option>2007</option>
-                                    <option>2008</option>
-                                    <option>2009</option>
-                                    <option>2010</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-                                </select>
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Month</option>
-                                    <option>January</option>
-                                    <option>February</option>
-                                    <option>March</option>
-                                    <option>April</option>
-                                    <option>May</option>
-                                    <option>June</option>
-                                    <option>July</option>
-                                    <option>August</option>
-                                </select>
-                                <select class="form-control " >
-                                    <!--id ommited=select-->
-                                    <option>Day</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                </select>
-                                <button type="submit" class="btn btn-primary ">Submit</button>
+                            <div class="col-lg-10">
+                                  <input type="text" class="form-control" id="inputDate" placeholder="BirthDate">
+                                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                            <!--&lt;!&ndash;form ommited&ndash;&gt;-->
+                            <!--<div class="col-lg-10 row">-->
+                                <!--<select class="form-control " >-->
+                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
+                                    <!--<option>Year</option>-->
+                                    <!--<option>1994</option>-->
+                                    <!--<option>1995</option>-->
+                                    <!--<option>1996</option>-->
+                                    <!--<option>1997</option>-->
+                                    <!--<option>1998</option>-->
+                                    <!--<option>1999</option>-->
+                                    <!--<option>2000</option>-->
+                                    <!--<option>2001</option>-->
+                                    <!--<option>2002</option>-->
+                                    <!--<option>2003</option>-->
+                                    <!--<option>2004</option>-->
+                                    <!--<option>2005</option>-->
+                                    <!--<option>2006</option>-->
+                                    <!--<option>2007</option>-->
+                                    <!--<option>2008</option>-->
+                                    <!--<option>2009</option>-->
+                                    <!--<option>2010</option>-->
+                                    <!--<option>2011</option>-->
+                                    <!--<option>2012</option>-->
+                                    <!--<option>2013</option>-->
+                                <!--</select>-->
+                                <!--<select class="form-control " >-->
+                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
+                                    <!--<option>Month</option>-->
+                                    <!--<option>January</option>-->
+                                    <!--<option>February</option>-->
+                                    <!--<option>March</option>-->
+                                    <!--<option>April</option>-->
+                                    <!--<option>May</option>-->
+                                    <!--<option>June</option>-->
+                                    <!--<option>July</option>-->
+                                    <!--<option>August</option>-->
+                                <!--</select>-->
+                                <!--<select class="form-control " >-->
+                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
+                                    <!--<option>Day</option>-->
+                                    <!--<option>1</option>-->
+                                    <!--<option>2</option>-->
+                                    <!--<option>3</option>-->
+                                    <!--<option>4</option>-->
+                                    <!--<option>5</option>-->
+                                    <!--<option>5</option>-->
+                                    <!--<option>6</option>-->
+                                    <!--<option>7</option>-->
+                                <!--</select>-->
                                 <!--TODO: disable and enable it with jquery checkings! -->
                                 <!--TODO: dropdownha kenare ham nabashan -->
                             </div>
-                        </div>
+                        <!--</div>-->
                         <!--<div class="form-group">-->
 
                             <!--<br>-->
@@ -186,9 +190,11 @@
 <!--Site ends-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap-mterial-datepicker.js"></script>
+<script src="js/Signup.js"></script>
 <script>
     $(document).ready(function () {
         // This command is used to initialize some elements and make them work properly
