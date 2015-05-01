@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
-    <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/toolbar.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
+    <link href="css/toollbar.css" rel="stylesheet">
+    <title>toolbar</title>
+
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">IMGIGI</a>
-        </div>
-        <div>
-            <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="#"></a></li>-->
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>User</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
-                            class="glyphicon glyphicon-globe"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">User1 liked your post!</a></li>
-                        <li><a href="#">User2 commented on your post!</a></li>
-                        <li><a href="#">User3 started following you!</a></li>
-                        <li><a href="#">User4 commented on User1 post!</a></li>
+<!--Site starts-->
+<div class="row container">
+    <!--TODO: aya row container mikhahad ya na?notificationha kharabash nemikonad?-->
+    <div class="col-md-12">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">IMGIGI</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <!--<li class="active"><a href="#"></a></li>-->
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>User</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                                    class="glyphicon glyphicon-globe"></span><span class="badge">4</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                   <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"></a>
+                                            </div>
+                                            <div class="row-content">
+                                                 <p class="list-group-item-heading">Mahyar gigi liked your post!</p>
+                                                 <!--<p class="list-group-item-text" style='color: #000000'>User1 liked your post!</p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon" style="height: 50px ; width: 50px">User2 commented on your post!</a>
+                                    <hr>
+                                </li>
+                                <li><a href="#">User3 started following you!</a><hr></li>
+                                <li><a href="#">User4 commented on User1 post!</a><hr></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right ">
+                    <ul class="nav navbar-nav navbar-right ">
 
-                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right ">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search"/>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right ">
+                        <form class="navbar-form " role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control " placeholder="Search"/>
 
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit">
-                                <span class="sr-only">Search</span>
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </ul>
-        </div>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="sr-only">Search</span>
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-</nav>
+</div>
+<!--Site ends!-->
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap-mterial-datepicker.js"></script>
+<script src="js/Signup.js"></script>
+<script>
+    $(document).ready(function () {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+    });
+</script>
 </body>
 </html>
