@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css"/>
 
@@ -16,10 +17,12 @@
 </head>
 <body>
 <!--Site starts-->
+<div class="container-fluid">
 <div class="row">
     <!--TODO: container ke be row ezafe mikonam moshkele scrolle dorost mishe vali hame diva shift mikhoran!-->
     <div id="left" class="col-md-3"></div>
     <div id="center" class="col-md-6">
+        <div class="well">
         <div class="row">
             <div class="col-md-9">
                 <div class="list-group">
@@ -34,7 +37,8 @@
                 </div>
             </div>
             <div class="col-md-3">
-                yesterday 15:20
+                <a href="#">yesterday 15:20</a>
+
             </div>
         </div>
         <div class="row">
@@ -52,10 +56,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-3 film-name"><h3>Harry Potter</h3></div>
             <div class="col-md-8 rating"><h3>Rating</h3>
-                <!--<input id="movie-rate" type="number" class="rating" data-stars="1"-->
-                               <!--data-max="10" data-step="0.1" data-show-caption="true" data-size="xl"-->
-                               <!--data-show-clear="false" data-readonly="true"-->
-                                <!-->-->
+                <input id="movie-rate" class="rating" data-stars="5" data-min="0" data-max="10" data-step="1" data-show-clear="false" data-readonly="true" data-symbol="&#x2605">
             </div>
         </div>
         <div class="row">
@@ -69,9 +70,9 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <ul>
+                <ul class="comment-list list-group">
                     <li>
-                        <div class="list-group">
+                        <!--<div class="list-group">-->
                             <div class="list-group-item">
                                 <div class="row-picture">
                                     <img class="circle" src="Img/ali%20choopan.jpg" alt="icon">
@@ -83,11 +84,11 @@
                                         seen</p>
                                 </div>
                             </div>
-                        </div>
+                        <!--</div>-->
                         <div class="list-group-separator"></div>
                     </li>
                     <li>
-                        <div class="list-group">
+                        <!--<div class="list-group">-->
                             <div class="list-group-item">
                                 <div class="row-picture">
                                     <img class="circle" src="Img/mahyar2.jpg" alt="icon">
@@ -98,18 +99,20 @@
                                     <p class="list-group-item-text">This is the best film i have ever seen</p>
                                 </div>
                             </div>
-                        </div>
+                        <!--</div>-->
                         <div class="list-group-separator"></div>
                     </li>
-                    <li>
-                        <div class="form-group">
-                            <!--<input class="form-control floating-labe" id="focusedInput" type="text" placeholder="Comment">-->
-                            <textarea class="form-control floating-label input-group-lg" id="focusedInput" type="text"
-                                      placeholder="Comment"></textarea>
-                            <!--</textarea>-->
-                        </div>
-                        <div>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-sm">Post Comment</a>
+                    <li class="text-button">
+                        <div class="list-group-item">
+                            <div class="form-group">
+                                <!--<input class="form-control floating-labe" id="focusedInput" type="text" placeholder="Comment">-->
+                                <textarea class="form-control floating-label input-group-lg" id="focusedInput" type="text"
+                                          placeholder="Comment"></textarea>
+                                <!--</textarea>-->
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="btn btn-primary btn-sm" id="comment-btn">Post Comment</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -118,8 +121,10 @@
         </div>
 
     </div>
+    </div>
     <div id="right" class="col-md-3"></div>
 </div>
+    </div>
 <!-- site ends-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -133,7 +138,8 @@
     $(document).ready(function () {
         // This command is used to initialize some elements and make them work properly
         $.material.init();
-        $('#movie-rate').rating('update', 8.1);
+        $('#movie-rate').rating('update', 6);
+
     });
 </script>
 

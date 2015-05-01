@@ -1,7 +1,9 @@
 li {
-    /*width: 250px;*/
-    /*margin-right: 5px;*/
-    float: left;
+    /*float: left;*/
+    position: relative;
+    left: -30px;
+    /*text-outline: dasti oomadam dadam age mikhay avazesh kon;*/
+    /*TODO: dasti oomadam dadam age mikhay avazesh kon*/
 }
 
 aside {
