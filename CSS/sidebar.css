@@ -1,12 +1,14 @@
 li {
-    display: inline-block;
-    width: 300px;
-    margin-right: 5px;
+    /*width: 250px;*/
+    /*margin-right: 5px;*/
     float: left;
 }
 
 aside {
     float: right;
-    width: 350px;
-    margin-right: 10px;
+    /*width: 350px;*/
+    /*margin-right: 10px;*/
+}
+.suggested-films{
+    margin-top: 10px;
 }
