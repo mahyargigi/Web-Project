@@ -1,8 +1,9 @@
-body{
-    background-image: url("../img/cine.jpg");
-    background-size: 100%;
+body {
+ /*   background-image: url("../img/cine.jpg");
+ */   background-size: 100%;
 }
-.body-div{
+
+.body-div {
     height: 600px;
     width: 600px;
     background-color: #afd9ee;
@@ -10,17 +11,21 @@ body{
     margin-left: auto;
     margin-top: 100px;
 }
-form{
+
+form {
     margin-left: auto;
     margin-right: auto;
 }
-.control-label{
+
+.control-label {
     display: block;
 }
-.form-control{
+
+.form-control {
     width: 50%;
     display: inline;
 }
-.warning-label{
+
+.warning-label {
     color: red;
 }
