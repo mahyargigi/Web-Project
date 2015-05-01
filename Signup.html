@@ -1,61 +1,4 @@
 <!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--<title>Sign Up!</title>-->
-<!--<meta charset="utf-8">-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--&lt;!&ndash; Latest compiled and minified css &ndash;&gt;-->
-<!--&lt;!&ndash;<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">&ndash;&gt;-->
-<!--<link rel="stylesheet" href="css/bootstrap.css">-->
-<!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
-<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-<!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
-<!--<link rel="stylesheet" href="css/signup.css">-->
-
-<!--&lt;!&ndash;&lt;!&ndash; jQuery library &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>&ndash;&gt;-->
-<!--<script src="js/jquery-1.11.2.js"></script>-->
-<!--<script src="js/Signup.js"></script>-->
-
-
-<!--</head>-->
-<!--<body>-->
-<!--<div class="body-div">-->
-<!--<form method="post" >-->
-<!--<div class="form-group">-->
-<!--<div class="username input">-->
-<!--<label class="control-label">Username</label>-->
-<!--<input type="text" class="form-control" id="user-input">-->
-
-<!--</div>-->
-<!--<div class="password input">-->
-<!--<label class="control-label">Password</label>-->
-<!--<input type="password" class="form-control" id="first-pass">-->
-<!--<label id="short-pass" class="warning-label">At least 6 characters!</label>-->
-<!--</div>-->
-<!--<div class="confirm-pass input">-->
-<!--<label class="control-label">Confirm password</label>-->
-<!--<input type="password" class="form-control" id="second-pass">-->
-<!--<label id="not-match" class="warning-label">Passwords don't match!</label>-->
-<!--</div>-->
-<!--<div class="email input">-->
-<!--<label class="control-label">Email</label>-->
-<!--<input type="email" class="form-control" id="emailAddress">-->
-<!--<label id="invalid-email" class="warning-label">Invalid Email address!</label>-->
-<!--</div>-->
-<!--<div class="birthday-date input">-->
-<!--<label class="control-label">Birthday Date</label>-->
-<!--<div id="default-birthday"></div>-->
-<!--</div>-->
-<!--<button type="submit" class="btn btn-success disabled">Send!</button>-->
-<!--</div>-->
-<!--</form>-->
-<!--</div>-->
-<!--</body>-->
-<!--</html>-->
 <html>
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,11 +12,20 @@
 </head>
 <body>
 <!--Site starts-->
-    <header class="page-header">
-         <a href="javascript:void(0)" class="btn btn-link " id="sign-in">Sign in</a>
-        <!--TODO: header has problem-->
-        <h2 class="text-center">Welcome to IMGIGI</h2>
-    </header>
+    <div class="row">
+        <div class="col-md-12">
+            <header class="page-header ">
+                <di class="col-md-1"></di>
+                <div class="col-md-10">
+                    <h2 class="text-center">Welcome to IMGIGI</h2>
+                </div>
+                <div class="col-md-1">
+                    <a href="javascript:void(0)" class="btn btn-link " id="sign-in">Sign in</a>
+                    <!--TODO: header has problem-->
+                </div>
+            </header>
+        </div>
+    </div>
     <div class="row">
         <div id="left" class="col-md-3"></div>
         <div id="center" class="col-md-6">
@@ -121,66 +73,9 @@
                                   <input type="text" class="form-control" id="inputDate" placeholder="BirthDate">
                                   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                             </div>
-                            <!--&lt;!&ndash;form ommited&ndash;&gt;-->
-                            <!--<div class="col-lg-10 row">-->
-                                <!--<select class="form-control " >-->
-                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
-                                    <!--<option>Year</option>-->
-                                    <!--<option>1994</option>-->
-                                    <!--<option>1995</option>-->
-                                    <!--<option>1996</option>-->
-                                    <!--<option>1997</option>-->
-                                    <!--<option>1998</option>-->
-                                    <!--<option>1999</option>-->
-                                    <!--<option>2000</option>-->
-                                    <!--<option>2001</option>-->
-                                    <!--<option>2002</option>-->
-                                    <!--<option>2003</option>-->
-                                    <!--<option>2004</option>-->
-                                    <!--<option>2005</option>-->
-                                    <!--<option>2006</option>-->
-                                    <!--<option>2007</option>-->
-                                    <!--<option>2008</option>-->
-                                    <!--<option>2009</option>-->
-                                    <!--<option>2010</option>-->
-                                    <!--<option>2011</option>-->
-                                    <!--<option>2012</option>-->
-                                    <!--<option>2013</option>-->
-                                <!--</select>-->
-                                <!--<select class="form-control " >-->
-                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
-                                    <!--<option>Month</option>-->
-                                    <!--<option>January</option>-->
-                                    <!--<option>February</option>-->
-                                    <!--<option>March</option>-->
-                                    <!--<option>April</option>-->
-                                    <!--<option>May</option>-->
-                                    <!--<option>June</option>-->
-                                    <!--<option>July</option>-->
-                                    <!--<option>August</option>-->
-                                <!--</select>-->
-                                <!--<select class="form-control " >-->
-                                    <!--&lt;!&ndash;id ommited=select&ndash;&gt;-->
-                                    <!--<option>Day</option>-->
-                                    <!--<option>1</option>-->
-                                    <!--<option>2</option>-->
-                                    <!--<option>3</option>-->
-                                    <!--<option>4</option>-->
-                                    <!--<option>5</option>-->
-                                    <!--<option>5</option>-->
-                                    <!--<option>6</option>-->
-                                    <!--<option>7</option>-->
-                                <!--</select>-->
                                 <!--TODO: disable and enable it with jquery checkings! -->
                                 <!--TODO: dropdownha kenare ham nabashan -->
                             </div>
-                        <!--</div>-->
-                        <!--<div class="form-group">-->
-
-                            <!--<br>-->
-                            <!--<a href="javascript:void(0)" class="btn btn-link">Forgot password</a>-->
-                            <!--<a href="javascript:void(0)" class="btn btn-link">Signup</a>-->
-                        <!--</div>-->
                     </fieldset>
                 </form>
             </div>
