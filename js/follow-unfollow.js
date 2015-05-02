@@ -2,28 +2,6 @@
  * Created by User on 4/29/15.
  */
 $(document).ready(function () {
-//   $('.follow').on('click',
-//       function(){
-//           console.log("clicked!")
-//
-//       $(this).hover(function(){
-////            console.log("hover");
-//            $(this).on('click',function(){
-//                $(this).removeClass('btn-danger');
-//                $(this).addClass('btn-info');
-//                $(this).text('follow');
-//                $(this).removeClass('following');
-//                $(this).addClass('follow');
-//                $(this).unbind('mouseenter mouseleave');
-//            });
-//        }, function() {
-//
-//       });
-////       console.log($(this).className)
-////       $(this).parent().parent().delay(2000).hide();
-////       window.setTimeout($(this).parent().parent().hide(),2000);
-////       ba takhir hide nemishe!
-//   }) ;
     notClicked($('.follow'));
     clicked($('.following'));
 
