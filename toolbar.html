@@ -30,25 +30,35 @@
                                     class="glyphicon glyphicon-globe"></span><span class="badge">4</span></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                   <div class="list-group">
+
+                                    <div class="list-group">
+
                                         <div class="list-group-item">
                                             <div class="row-picture">
                                                 <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"></a>
                                             </div>
                                             <div class="row-content">
-                                                 <p class="list-group-item-heading">Mahyar gigi liked your post!</p>
-                                                 <!--<p class="list-group-item-text" style='color: #000000'>User1 liked your post!</p>-->
+
+                                                <p class="list-group-item-heading">Mahyar gigi liked your post!</p>
+                                                <!--<p class="list-group-item-text" style='color: #000000'>User1 liked your post!</p>-->
                                             </div>
                                         </div>
                                     </div>
                                     <hr>
                                 </li>
                                 <li>
-                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon" style="height: 50px ; width: 50px">User2 commented on your post!</a>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User2 commented on your
+                                        post!</a>
                                     <hr>
                                 </li>
-                                <li><a href="#">User3 started following you!</a><hr></li>
-                                <li><a href="#">User4 commented on User1 post!</a><hr></li>
+                                <li><a href="#">User3 started following you!</a>
+                                    <hr>
+                                </li>
+                                <li><a href="#">User4 commented on User1 post!</a>
+                                    <hr>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -59,15 +69,15 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right ">
                         <form class="navbar-form " role="search">
-                            <div class="input-group">
-                                <input type="text" class="form-control " placeholder="Search"/>
+                            <div id="search" class="input-group">
+                                <input type="text" class="typeahead form-control" hint="Search"/>
 
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
-                                        <span class="sr-only">Search</span>
-                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                                    </button>
-                                </div>
+                                <!--<div class="input-group-btn">-->
+                                <!--<button class="btn btn-default" type="submit">-->
+                                <!--<span class="sr-only">Search</span>-->
+                                <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                                <!--</button>-->
+                                <!--</div>-->
                             </div>
                         </form>
                     </ul>
@@ -81,6 +91,10 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
+<script src="js/typeahead.js"></script>
+<script src="js/typeahead.bundle.js"></script>
+<script src="js/bloodhound.js"></script>
+<script src="js/typeahead.jquery.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/bootstrap-mterial-datepicker.js"></script>
 <script src="js/Signup.js"></script>
@@ -88,6 +102,54 @@
     $(document).ready(function () {
         // This command is used to initialize some elements and make them work properly
         $.material.init();
+
+        $('#search').typeahead({
+            name: 'accounts',
+            local: ['Audi', 'BMW', 'Bugatti', 'Ferrari', 'Ford', 'Lamborghini', 'Mercedes Benz', 'Porsche', 'Rolls-Royce', 'Volkswagen']
+        });
+        var substringMatcher = function (strs) {
+            return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function (i, str) {
+                    if (substrRegex.test(str)) {
+                        matches.push(str);
+                    }
+                });
+
+                cb(matches);
+            };
+        };
+
+        var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+            'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+            'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+            'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+            'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+            'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+            'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+            'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+            'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+        ];
+
+        $('#search .typeahead').typeahead({
+                    hint: true,
+                    highlight: false,
+                    minLength: 1
+                },
+                {
+                    name: 'states',
+                    source: substringMatcher(states)
+                });
+
     });
 </script>
 </body>
