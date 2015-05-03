@@ -9,11 +9,80 @@
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!--<link href="css/login.css" rel="stylesheet">-->
-    <title>User Profile</title>
+    <title>User Profile-not yours</title>
 
 </head>
 <body>
 <!--site starts-->
+<div class="row container" style="margin-bottom: 70px">
+    <!--TODO: aya row container mikhahad ya na?notificationha kharabash nemikonad?-->
+    <div class="col-md-12">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">IMGIGI</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <!--<li class="active"><a href="#"></a></li>-->
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>User</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                                    class="glyphicon glyphicon-globe"></span><span class="badge">4</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User2 liked your post</a>
+                                    <hr>
+                                </li>
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User2 commented on your
+                                        post</a>
+                                    <hr>
+                                </li>
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User3 started following you</a>
+                                    <hr>
+                                </li>
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User4 commented on your post</a>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right ">
+
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right ">
+                        <form class="navbar-form " role="search">
+                            <div id="search" class="input-group">
+                                <input type="text" class="typeahead form-control" hint="Search"/>
+
+                                <!--<div class="input-group-btn">-->
+                                <!--<button class="btn btn-default" type="submit">-->
+                                <!--<span class="sr-only">Search</span>-->
+                                <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                                <!--</button>-->
+                                <!--</div>-->
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
 <div class="row">
     <div class="thumbnail col-lg-2 col-lg-offset-1 pull-left">
         <img src="Img/ali%20choopan.jpg" class="thumbnail">
@@ -593,7 +662,107 @@
         </div>
 
     </div>
-    <div id="right" class="col-md-3"></div>
+    <div id="right" class="col-md-3">
+        <aside class="sidebar col-md-12">
+        <div class="row">
+            <div class="suggested-films col-md-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Suggested films:</h3>
+                    </div>
+                    <div class="panel-body" >
+                        <ul style="text-align: left">
+                            <a href="#">
+                                <li >
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/tintin.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">TinTin</h4>
+
+                                                <!--<p class="list-group-item-text">A nostalgic animation!</p>-->
+                                                <!--<div class="star-rating ">-->
+                                                <input id="movie-rate1" class="rating rating-sm" data-stars="5" data-min="0" data-max="5" data-step="0.1" data-show-clear="false" data-readonly="true" data-symbol="&#x2605">
+                                                <!--</div>-->
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/harrypotter.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">HarryPotter</h4>
+                                                <input id="movie-rate2" class="rating rating-sm" data-stars="5" data-min="0" data-max="5" data-step="0.1" data-show-clear="false" data-readonly="true" data-symbol="&#x2605">
+                                                <!--<p class="list-group-item-text">Best movie ever!</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="suggested-Users col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Suggested Users:</h3>
+                    </div>
+                    <div class="panel-body" >
+                         <ul>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/ali%20choopan.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">Ali Choopan</h4>
+                                                <!--<p class="list-group-item-text">A nostalgic animation!</p>-->
+                                                <a href="javascript:void(0)" class="btn btn-info follow">Follow</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/mahyar1.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">Mahyar GiGi</h4>
+                                                <!--<p class="list-group-item-text">Best movie ever!</p>-->
+                                                <a href="javascript:void(0)" class="btn btn-info  follow">Follow</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    </div>
 </div>
 <!--site ends!-->
 <script src="js/jquery-1.11.2.js"></script>
@@ -602,6 +771,8 @@
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
 <script src="js/follow-unfollow.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/toolbar.js"></script>
 
 <script>
     $(document).ready(function () {

@@ -1,6 +1,6 @@
 /**
- * Created by User on 5/3/15.
- */
+* Created by User on 5/3/15.
+*/
 $(document).ready(function(){
    $('#search').typeahead({
             name: 'accounts',

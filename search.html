@@ -2,12 +2,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/star-rating.min.css" rel="stylesheet">
     <link href="css/roboto.min.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/material.min.css" rel="stylesheet">
     <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
     <link href="css/toollbar.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
     <title>Search</title>
     <title></title>
 </head>
@@ -15,7 +17,7 @@
 
 
 <!--Site starts-->
-<div class="row container">
+<div class="row container" style="margin-bottom: 70px">
     <!--TODO: aya row container mikhahad ya na?notificationha kharabash nemikonad?-->
     <div class="col-md-12">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -83,11 +85,117 @@
         </nav>
     </div>
 </div>
+<div class="col-md-3"></div>
+<div class="col-md-6"></div>
+<div class="col-md-3">
+    <aside class="sidebar col-md-12">
+        <div class="row">
+            <div class="suggested-films col-md-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Suggested films:</h3>
+                    </div>
+                    <div class="panel-body" >
+                        <ul style="text-align: left">
+                            <a href="#">
+                                <li >
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/tintin.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">TinTin</h4>
+
+                                                <!--<p class="list-group-item-text">A nostalgic animation!</p>-->
+                                                <!--<div class="star-rating ">-->
+                                                <input id="movie-rate1" class="rating rating-sm" data-stars="5" data-min="0" data-max="5" data-step="0.1" data-show-clear="false" data-readonly="true" data-symbol="&#x2605">
+                                                <!--</div>-->
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/harrypotter.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">HarryPotter</h4>
+                                                <input id="movie-rate2" class="rating rating-sm" data-stars="5" data-min="0" data-max="5" data-step="0.1" data-show-clear="false" data-readonly="true" data-symbol="&#x2605">
+                                                <!--<p class="list-group-item-text">Best movie ever!</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="suggested-Users col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Suggested Users:</h3>
+                    </div>
+                    <div class="panel-body" >
+                         <ul>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/ali%20choopan.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">Ali Choopan</h4>
+                                                <!--<p class="list-group-item-text">A nostalgic animation!</p>-->
+                                                <a href="javascript:void(0)" class="btn btn-info follow">Follow</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-picture">
+                                                <img class="circle" src="Img/mahyar1.jpg" alt="icon">
+                                            </div>
+                                            <div class="row-content">
+                                                <h4 class="list-group-item-heading">Mahyar GiGi</h4>
+                                                <!--<p class="list-group-item-text">Best movie ever!</p>-->
+                                                <a href="javascript:void(0)" class="btn btn-info  follow">Follow</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-separator"></div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
 <!--Site ends!-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
+<script src="js/follow-unfollow.js"></script>
+<script src="js/star-rating.min.js"></script>
+<script src="js/sidebar.js"></script>
 <script src="js/typeahead.js"></script>
 <script src="js/typeahead.bundle.js"></script>
 <script src="js/bloodhound.js"></script>
