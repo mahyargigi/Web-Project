@@ -3,20 +3,20 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/star-rating.min.css" rel="stylesheet">
+    <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css"/>
+
     <link href="css/roboto.min.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/material.min.css" rel="stylesheet">
     <link href="css/bootstrap-material-datepicker.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/post.css" rel="stylesheet">
     <link href="css/toollbar.css" rel="stylesheet">
-    <link href="css/sidebar.css" rel="stylesheet">
     <title>Search</title>
     <title></title>
 </head>
 <body>
 
-
-<!--Site starts-->
 <div class="row container" style="margin-bottom: 70px">
     <!--TODO: aya row container mikhahad ya na?notificationha kharabash nemikonad?-->
     <div class="col-md-12">
@@ -36,32 +36,27 @@
                             <ul class="dropdown-menu">
                                 <li>
 
-                                    <div class="list-group">
-
-                                        <div class="list-group-item">
-                                            <div class="row-picture">
-                                                <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"></a>
-                                            </div>
-                                            <div class="row-content">
-
-                                                <p class="list-group-item-heading">Mahyar gigi liked your post!</p>
-                                                <!--<p class="list-group-item-text" style='color: #000000'>User1 liked your post!</p>-->
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User2 liked your post</a>
                                     <hr>
                                 </li>
                                 <li>
 
                                     <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
                                                      style="height: 50px ; width: 50px">User2 commented on your
-                                        post!</a>
+                                        post</a>
                                     <hr>
                                 </li>
-                                <li><a href="#">User3 started following you!</a>
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User3 started following you</a>
                                     <hr>
                                 </li>
-                                <li><a href="#">User4 commented on User1 post!</a>
+                                <li>
+
+                                    <a href="#"><img class="circle" src="Img/mahyar1.jpg" alt="icon"
+                                                     style="height: 50px ; width: 50px">User4 commented on your post</a>
                                     <hr>
                                 </li>
                             </ul>
@@ -77,6 +72,12 @@
                             <div id="search" class="input-group">
                                 <input type="text" class="typeahead form-control" hint="Search"/>
 
+                                <!--<div class="input-group-btn">-->
+                                <!--<button class="btn btn-default" type="submit">-->
+                                <!--<span class="sr-only">Search</span>-->
+                                <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                                <!--</button>-->
+                                <!--</div>-->
                             </div>
                         </form>
                     </ul>
@@ -85,8 +86,12 @@
         </nav>
     </div>
 </div>
-<div class="col-md-3"></div>
-<div class="col-md-6"></div>
+
+<!--Site starts-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+    <div class="col-md-6"></div>
 <div class="col-md-3">
     <aside class="sidebar col-md-12">
         <div class="row">
@@ -188,6 +193,8 @@
         </div>
     </aside>
 </div>
+    </div>
+</div>
 <!--Site ends!-->
 <script src="js/jquery-1.11.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -208,67 +215,6 @@
     $(document).ready(function () {
         // This command is used to initialize some elements and make them work properly
         $.material.init();
-
-        $('#search').typeahead({
-            name: 'accounts',
-            local: ['Audi', 'BMW', 'Bugatti', 'Ferrari', 'Ford', 'Lamborghini', 'Mercedes Benz', 'Porsche', 'Rolls-Royce', 'Volkswagen']
-        });
-        var substringMatcher = function (strs) {
-            return function findMatches(q, cb) {
-                var matches, substringRegex;
-
-                // an array that will be populated with substring matches
-                matches = [];
-
-                // regex used to determine if a string contains the substring `q`
-                substrRegex = new RegExp(q, 'i');
-
-                // iterate through the pool of strings and for any string that
-                // contains the substring `q`, add it to the `matches` array
-                $.each(strs, function (i, str) {
-                    if (substrRegex.test(str)) {
-                        matches.push(str);
-                    }
-                });
-
-                cb(matches);
-            };
-        };
-
-        var states = ['The Shawshank Redemption', 'The Godfather', 'The Godfather: Part II', 'The Dark Knight',
-            'Pulp Fiction', "Schindler's List", '12 Angry Men', 'The Good, the Bad and the Ugly',
-            'The Lord of the Rings: The Return of the King', 'Fight Club',
-            'The Lord of the Rings: The Fellowship of the Ring', 'Star Wars: Episode V - The Empire Strikes Back',
-            'Forrest Gump', 'Inception', "One Flew Over the Cuckoo's Nest", 'The Lord of the Rings: The Two Towers',
-            'Goodfellas', 'The Matrix', 'Star Wars: Episode IV - A New Hope', 'Seven Samurai', 'City of God', 'Se7en',
-            'The Usual Suspects', 'The Silence of the Lambs', 'Interstellar', "It's a Wonderful Life",
-            'Léon: The Professional', 'Life Is Beautiful', 'Once Upon a Time in the West', 'Casablanca',
-            'American History X', 'Saving Private Ryan', 'Raiders of the Lost Ark', 'Spirited Away', 'City Lights',
-            'Psycho', 'Rear Window', 'Whiplash', 'The Intouchables', 'Modern Times', 'Terminator 2: Judgment Day',
-            'The Green Mile', 'Memento', 'The Pianist', 'The Departed', 'Gladiator', 'Apocalypse Now', 'Sunset Blvd.',
-            'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb', 'Back to the Future', 'Alien',
-            'The Prestige', 'The Lion King', 'The Great Dictator', 'The Lives of Others', 'Cinema Paradiso',
-            'Django Unchained', 'The Shining', 'The Dark Knight Rises', 'Paths of Glory', 'American Beauty',
-            'WALL·E', 'North by Northwest', 'Aliens', 'Citizen Kane', 'Grave of the Fireflies', 'Vertigo', 'M',
-            'Amélie', 'Oldboy', 'Das Boot', 'Princess Mononoke', 'Star Wars: Episode VI - Return of the Jedi',
-            'Once Upon a Time in America', 'Toy Story 3', 'Reservoir Dogs', 'A Clockwork Orange', 'Braveheart',
-            'Taxi Driver', 'Double Indemnity', 'Requiem for a Dream', 'Witness for the Prosecution',
-            'To Kill a Mockingbird', 'Lawrence of Arabia', 'Eternal Sunshine of the Spotless Mind',
-            'Full Metal Jacket', 'The Sting', "Singin' in the Rain", 'Bicycle Thieves', 'Amadeus',
-            'Monty Python and the Holy Grail', 'Snatch.', '2001: A Space Odyssey', 'For a Few Dollars More',
-            'Rashomon',
-            'L.A. Confidential', 'The Kid', 'All About Eve', 'The Apartment', 'Inglourious Basterds'];
-
-
-        $('#search .typeahead').typeahead({
-                    hint: true,
-                    highlight: false,
-                    minLength: 1
-                },
-                {
-                    name: 'states',
-                    source: substringMatcher(states)
-                });
 
     });
 </script>
