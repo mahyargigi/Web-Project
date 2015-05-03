@@ -23,7 +23,7 @@
 //    });
 
 $(document).ready(function () {
-    $('#submit').on('click', function () {
-        $(fieldset).remove
-    })
+//    $('#submit').on('click', function () {
+//        $(fieldset).remove
+//    })
 });
